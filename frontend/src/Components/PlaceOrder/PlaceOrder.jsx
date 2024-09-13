@@ -38,7 +38,7 @@ const PlaceOrder = () => {
         items:orderItems,
         amount:getTotalCartAmount()
     }
-    let response = await axios.post("https://grocerease-backend-k60z.onrender.com/place",orderData,{headers:{
+    let response = await axios.post("https://grocerease-webapp-backend.onrender.com/place",orderData,{headers:{
         Accept:'application/form-data',
           'auth-token':`${localStorage.getItem('auth-token')}`,
           'Content-Type': 'application/json',

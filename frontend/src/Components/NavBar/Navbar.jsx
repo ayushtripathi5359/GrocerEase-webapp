@@ -23,7 +23,7 @@ function Navbar() {
         // Fetch user data if the user is logged in
         const token = localStorage.getItem('auth-token');
         if (token) {
-            fetch('https://grocerease-backend-k60z.onrender.com/getuser', {
+            fetch('https://grocerease-webapp-backend.onrender.com/getuser', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
