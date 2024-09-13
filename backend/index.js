@@ -12,7 +12,7 @@ const { log } = require('console');
 
 app.use(express.json());
 app.use(cors({
-    origin: [""],
+    origin: ["https://grocer-ease-webapp-q48g.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }));    //to connect from react frontend
