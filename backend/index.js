@@ -11,7 +11,11 @@ const { log } = require('console');
 
 
 app.use(express.json());
-app.use(cors());    //to connect from react frontend
+app.use(cors({
+    origin:"https://grocerease-webapp-frontend.onrender.com",
+    methods: ["GET","POST"],
+    credentials: true
+}));    //to connect from react frontend
 
 
 //DB connection with mongo DB
