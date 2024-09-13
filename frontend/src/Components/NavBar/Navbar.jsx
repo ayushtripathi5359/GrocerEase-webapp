@@ -58,7 +58,7 @@ function Navbar() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const token = localStorage.getItem('auth-token');
-        fetch('https://grocerease-backend-k60z.onrender.com/updateuser', {
+        fetch('https://grocerease-webapp-backend.onrender.com/updateuser', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
